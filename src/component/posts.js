@@ -6,7 +6,7 @@ import Statement from './statement';
 function Post({posts,search,Arr}) {
   
     return (
-     <div className=" mx-md-5  mx-3">
+     <div className=" mx-md-5  mx-3 postTable">
         <table className="table">
           <thead>
             <tr className=" text-center">

@@ -16,7 +16,7 @@ function Statement() {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
 return (
- <div class="w-100" id="ProblemStatement">
+ <div class="w-100" id="ProblemStatement" className="bg-light">
     <section class="page-header">
           <div class="">
               <div class="row">
@@ -29,10 +29,10 @@ return (
               </div>
           </div>
    </section>
-   <div class="font-weight-bold mt-md-4 mt-3 lead ml-md-5  ml-3">All Problem Statement <a href="www.google.com" className="">Click here</a></div>
+   <div class="font-weight-bold mt-md-4 mt-3 lead ml-md-5  ml-3 mb-3">All Problem Statement <a href="www.google.com" className="">Click here</a></div>
     <div className="mx-md-5 mx-3">
-        <div class="row my-4">
-            <div className="col-md-2 ">
+        <div class="row ">
+            <div className="col-md-2 mt-5">
                 <Pagination 
                   postsPerPage={postsPerPage}
                   totalPosts={DetailsArr.length}
@@ -41,7 +41,7 @@ return (
                 />
             </div>
             <div className="col-md-5"></div>
-            <div  className=" col-sm">
+            <div  className=" col-sm mb-4 mt-sm-4">
               <div className="row mr-sm-1" >
                   <input className="mx-3 col " list="browsers" statement="browser" id="browser"  placeholder="Search Problem ID" value={search} onChange={(e)=>{setsearch(e.target.value.toLocaleUpperCase())}} size="30"   maxlength="5"/>
               </div>
